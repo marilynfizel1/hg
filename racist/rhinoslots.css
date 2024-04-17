@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+svg {
+	font-family: "Russo One", sans-serif;
+	width: 100%; height: 100%;
+}
+svg text {
+	animation: stroke 5s infinite alternate;
+	stroke-width: 2;
+	stroke: #A09990;
+	font-size: 100px;
+}
+
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  svg {
+    path {
+      transition: .1s;
+    }
+  
+    &:hover path {
+      d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+    }
+  }
+  
+@keyframes stroke {
+	0%   {
+		fill: rgba(204,0,0,0); stroke: rgba(160,153,144,1);
+		stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+	}
+	70%  {fill: rgba(204,0,0,0); stroke: rgba(160,153,144,1); }
+	80%  {fill: rgba(204,0,0,0); stroke: rgba(160,153,144,1); stroke-width: 3; }
+	100% {
+		fill: rgba(204,0,0,1); stroke: rgba(160,153,144,0);
+		stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+	}
+}
+
+.wrapper {background-color: #0D0D0D};
+
+
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .svg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  svg {
+    path {
+      transition: .1s;
+    }
+  
+    &:hover path {
+      d: path("M 800 300 Q 400 250 0 300 L 0 0 L 800 0 L 800 300 Z");
+    }
+  }#banner {
+    background: color(srgb #dfd7d7 green blue)
+    background-size:100%;
+    width: 1920px;
+    height: 200px;
+    min-width:700px;
+    max-width: 1920px;
+
+    
